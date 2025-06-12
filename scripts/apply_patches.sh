@@ -52,6 +52,7 @@ mv -f config/boards/onecloud.csc config/boards/onecloud.conf
 mv -f config/boards/nanopi-r3s.csc config/boards/nanopi-r3s.conf
 
 # station-m2
+cp -f ${GITHUB_WORKSPACE}/patch/M2/station-m2.csc config/boards/
 mv -f config/boards/station-m2.csc config/boards/station-m2.conf
 
 # Remove '-unofficial' from the VENDOR name
