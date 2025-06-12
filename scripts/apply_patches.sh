@@ -51,6 +51,9 @@ mv -f config/boards/onecloud.csc config/boards/onecloud.conf
 # nanopi-r3s
 mv -f config/boards/nanopi-r3s.csc config/boards/nanopi-r3s.conf
 
+# station-m2
+mv -f config/boards/station-m2.csc config/boards/station-m2.conf
+
 # Remove '-unofficial' from the VENDOR name
 sed -i 's/Armbian-unofficial/Armbian/g' lib/functions/configuration/main-config.sh
 

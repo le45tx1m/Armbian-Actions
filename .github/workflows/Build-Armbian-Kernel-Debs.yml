@@ -17,6 +17,7 @@ on:
           - 'jp-tvbox'
           - 'nanopi-r3s'
           - 'onecloud'
+          - 'station-m2'
       BRANCH:
         description: 'Armbian branch'
         default: 'current'
