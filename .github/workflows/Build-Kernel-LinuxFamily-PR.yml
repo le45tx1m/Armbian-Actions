@@ -197,7 +197,7 @@ jobs:
         run: |
           cd "${GITHUB_WORKSPACE}/build/output/"
           chmod +x "${GITHUB_WORKSPACE}/scripts/sha256.sh"
-          sleep 15 && LINUXFAMILY="${{ env.LINUX_FAMILY }}" "${GITHUB_WORKSPACE}/scripts/sha256.sh"
+          sleep 15 && "${GITHUB_WORKSPACE}/scripts/sha256.sh"
           ls -la
 
       - name: Upload SHA256 to Release

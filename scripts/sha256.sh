@@ -1,8 +1,8 @@
 #!/bin/bash
 set -euo pipefail
 
-LINUXFAMILY="${LINUXFAMILY:-input}"
-REPO="${GITHUB_REPOSITORY:-Zane-E/Armbian-Actions}"
+LINUXFAMILY="${LINUX_FAMILY}"
+REPO="${GITHUB_REPOSITORY}"
 
 extract_all_versions_with_sha() {
     awk '

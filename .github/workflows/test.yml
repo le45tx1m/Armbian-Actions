@@ -166,7 +166,6 @@ jobs:
           fi
 
           tar -tzf "../kernel-${KERNEL_VERSION}-${LINUX_FAMILY}.tar.gz" || { echo "Failed to create valid tar.gz file"; exit 1; }
-          sed -i "s/input/${LINUX_FAMILY}/" "${GITHUB_WORKSPACE}/scripts/sha256.sh"
 
       - name: Upload Kernel to Release
         if: success()
